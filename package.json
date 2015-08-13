@@ -1,0 +1,15 @@
+{
+  "name": "inv-wdq",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "coffee server.coffee",
+    "superstart": "supervisor -w . server.coffee"
+  },
+  "dependencies": {
+    "americano": "0.4.2",
+    "config": "^1.15.0",
+    "inv-cot": "^1.0.1",
+    "inv-couch": "^2.0.0",
+    "wikidata-sdk": "^1.3.6"
+  }
+}

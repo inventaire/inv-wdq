@@ -1,0 +1,9 @@
+{
+  "_id": "_design/claims",
+  "language": "coffeescript",
+  "views": {
+    "P50": {
+      "map": "(doc)->\n  {P50} = doc.claims\n  if P50?\n    P50.forEach (val)->\n      id = val?.mainsnak?.datavalue?.value?['numeric-id']\n      if id?\n        emit id, null"
+    }
+  }
+}
